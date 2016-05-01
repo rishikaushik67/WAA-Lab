@@ -95,6 +95,7 @@ public class FlightBean {
         this.noStopOver = noStopOver;
     }
     
+    
     public void printOnConsole(){
         System.out.println("From: "+from + "\n To: " + to +"\n Departure date :"+ departureDate +"\n Return Date :"+ returnDate
         +"\n" + trip);
