@@ -4,16 +4,20 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <body>
+    <h:form>
     <h:panelGrid columns="2" border="2">
         <f:facet name="header">
-                    <ui:include src="/header.xhtml"/>
+            <ui:include src="/header.xhtml"/>
         </f:facet>
-        <ui:insert>
+        <ui:insert name="back">
             <ui:include src="/Back.xhtml"/>
         </ui:insert>
-        <ui:insert>
-            <ui:include src="/employeeDetails.xhtml"/>
+        <ui:insert name="employeesList">
+            <ui:include src="/employeesList.xhtml"/>
         </ui:insert>
     </h:panelGrid>
+    </h:form>
+        </body>
 </html>
 
