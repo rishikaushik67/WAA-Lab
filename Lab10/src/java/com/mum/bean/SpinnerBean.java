@@ -23,9 +23,9 @@ public class SpinnerBean {
     public SpinnerBean() {
     }
  
-    private int month;
+    private int month=1;
     
-    private int year ;
+    private int year =2010;
 
     public int getMonth() {
         return month;
