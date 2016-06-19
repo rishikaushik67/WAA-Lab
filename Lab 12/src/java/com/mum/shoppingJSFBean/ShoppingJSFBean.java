@@ -89,6 +89,7 @@ public class ShoppingJSFBean {
     public void removeFromCart(ShoppingBean shoppingBean){
         if(orderList!=null){
             orderList.remove(shoppingBean);
+            totalPrice = totalPrice-shoppingBean.getPrice();
         }
     }
     public int getQuantity() {
